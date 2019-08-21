@@ -7,34 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styleSheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="main.js" defer></script>
     <title>Simple Calculator</title>
 </head>
 
 <body>
-    <div id="calculatorContainer">
+    <div id="calculatorContainer" class="w3-animate-opacity">
         <div id="display">
-            <div id="previousOperand">123</div>
-            <div id="currentOperand">456</div>
+            <div id="previousOperand"></div>
+            <div id="currentOperand"></div>
         </div>
         <button id="ACButton">AC</button>
         <button id="DELButton">DEL</button>
         <button id="equalsButton">=</button>
-        <button id="addButton">+</button>
-        <button id="subtractButton">-</button>
-        <button id="multiplyButton">x</button>
-        <button id="divideButton">÷</button>
-        <button id="decimalButton">.</button>
-        <button id="zeroButton">0</button>
-        <button id="oneButton">1</button>
-        <button id="twoButton">2</button>
-        <button id="threeButton">3</button>
-        <button id="fourButton">4</button>
-        <button id="fiveButton">5</button>
-        <button id="sixButton">6</button>
-        <button id="sevenButton">7</button>
-        <button id="eightButton">8</button>
-        <button id="nineButton">9</button>
+        <button id="addButton" class="operationButton">+</button>
+        <button id="subtractButton" class="operationButton">-</button>
+        <button id="multiplyButton" class="operationButton">x</button>
+        <button id="divideButton" class="operationButton">÷</button>
+        <button id="zeroButton" class="numberButton">0</button>
+        <button id="oneButton" class="numberButton">1</button>
+        <button id="twoButton" class="numberButton">2</button>
+        <button id="threeButton" class="numberButton">3</button>
+        <button id="fourButton" class="numberButton">4</button>
+        <button id="fiveButton" class="numberButton">5</button>
+        <button id="sixButton" class="numberButton">6</button>
+        <button id="sevenButton" class="numberButton">7</button>
+        <button id="eightButton" class="numberButton">8</button>
+        <button id="nineButton" class="numberButton">9</button>
+        <button id="decimalButton" class="numberButton">.</button>
 </body>
 
 </html>

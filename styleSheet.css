@@ -18,15 +18,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(227, 80, 61);
-    background: linear-gradient(90deg, rgba(227, 80, 61, 1) 10%, rgba(201, 107, 57, 1) 57%, rgba(201, 183, 61, 1) 100%);
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
 #calculatorContainer {
     box-sizing: border-box;
     display: block;
-    width: 400px;
-    height: 600px;
+    width: 360px;
+    height: 540px;
     margin: auto;
     background-color: #000000;
     border-radius: 5px;
@@ -34,7 +33,7 @@ body {
 
 #calculatorContainer {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 100px);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 'display display display display' 'ac ac del divide' 'one two three multiply' 'four five six add' 'seven eight nine subtract' 'decimal zero equals equals';
     background-color: rgba(255, 255, 255, .5);
@@ -46,7 +45,8 @@ button {
     background-color: rgba(255, 255, 255, 0.4);
     outline: none;
     padding: 0;
-    border: 1px solid;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    ;
 }
 
 button:hover {
