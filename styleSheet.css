@@ -121,3 +121,17 @@ button:hover {
 #zeroButton {
     grid-area: zero;
 }
+
+@media only screen and (max-width: 500px) {
+    #calculatorContainer {
+        width: 320px;
+        height: 480px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #calculatorContainer {
+        width: 400px;
+        height: 600px;
+    }
+}
