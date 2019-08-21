@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #d64141, #d0820e);
+    color: #4e3939;
 }
 
 #footer,
@@ -32,9 +33,9 @@ body {
     display: block;
     width: 360px;
     height: 540px;
-    margin: auto;
     background-color: #000000;
     border-radius: 5px;
+    margin: 10px 0px 10px 0px;
 }
 
 #calculatorContainer {
@@ -121,6 +122,10 @@ button {
     #calculatorContainer {
         width: 320px;
         height: 480px;
+        margin: 5px 0px 5px 0px;
+    }
+    h2 {
+        margin-top: 0px !important;
     }
 }
 
