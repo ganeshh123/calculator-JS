@@ -21,6 +21,12 @@ body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
+#footer,
+#footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 #calculatorContainer {
     box-sizing: border-box;
     display: block;
