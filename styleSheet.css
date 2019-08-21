@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(227, 80, 61);
+    background: linear-gradient(90deg, rgba(227, 80, 61, 1) 10%, rgba(201, 107, 57, 1) 57%, rgba(201, 183, 61, 1) 100%);
+}
+
+#calculatorContainer {
+    box-sizing: border-box;
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+#calculatorContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'display display display display' 'ac ac del divide' 'one two three multiply' 'four five six add' 'seven eight nine subtract' 'decimal zero equals equals';
+    background-color: rgba(255, 255, 255, .5);
+}
+
+button {
+    font-size: 18pt;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    padding: 0;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#display {
+    grid-area: display;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#previousOperand {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+#currentOperand {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+}
+
+#ACButton {
+    grid-area: ac;
+}
+
+#DELButton {
+    grid-area: del;
+}
+
+#equalsButton {
+    grid-area: equals;
+    border-bottom-right-radius: 5px;
+}
+
+#addButton {
+    grid-area: add;
+}
+
+#subtractButton {
+    grid-area: subtract;
+}
+
+#multiplyButton {
+    grid-area: multiply;
+}
+
+#divideButton {
+    grid-area: divide;
+}
+
+#decimalButton {
+    grid-area: decimal;
+    border-bottom-left-radius: 5px;
+}
+
+#zeroButton {
+    grid-area: zero;
+}
